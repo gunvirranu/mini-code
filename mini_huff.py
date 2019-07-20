@@ -27,3 +27,18 @@ def decompress(codes: dict, unpad: int, compressed: bytes) -> bytearray:
                 text.append(let)
                 bits = ""
     return text
+
+
+USAGE_TEXT = "Usage: mini_huff.py {compress|decompress} <infile> <outfile>"
+
+if __name__ == "__main__":
+    if len(argv) != 4: exit("Invalid arguments.\n" + USAGE_TEXT)
+    if argv[1] not in ("compress", "decompress"): exit("Invalid operation.\n" + USAGE_TEXT)
+    with open(argv[2], "rb") as f: in_bytes = f.read()
+    if argv[1] == "compress": out_bytes = compress(in_bytes)
+    elif argv[1] == "decompress": out_bytes = decompress(f.read())
+    print(
+        "In: %d, Out: %d, Percent: %.2f"
+        % (len(in_bytes), len(out_bytes), 100 * len(out_bytes) / len(in_bytes))
+    )
+    with open(argv[3], "wb") as f: f.write(out_bytes)
