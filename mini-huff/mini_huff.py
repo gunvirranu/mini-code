@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+
+# TODO: Finalize and shrinkify
+
 from sys import exit, argv
 from struct import pack, unpack, iter_unpack
 
@@ -27,7 +31,7 @@ def decompress(compressed: bytes) -> bytearray:
     unpad = compressed[0]
     code_len = unpack(">L", compressed[1:5])[0]
     codes = {code: let for code, let in iter_unpack(">LB", compressed[5 : 5 + code_len])}
-    compressed = memoryview(compressed)[5 + code_len :], bytearray()
+    compressed = memoryview(compressed)[5 + code_len :]
     text, cur = bytearray(), 1
     for i, byte in enumerate(compressed):
         # TODO: Slightly faster if the conditional in the range is removed
@@ -53,9 +57,11 @@ if __name__ == "__main__":
         out_bytes = compress(in_bytes)
     elif argv[1] == "decompress":
         out_bytes = decompress(in_bytes)
-    print(
-        "In: %d, Out: %d, Percent: %.2f"
-        % (len(in_bytes), len(out_bytes), 100 * len(out_bytes) / len(in_bytes))
+    print("In: {}, Out: {}, Ratio: {:.2f}%".format(
+            len(in_bytes),
+            len(out_bytes),
+            100 * len(out_bytes) / len(in_bytes)
+        )
     )
     with open(argv[3], "wb") as f:
         f.write(out_bytes)
