@@ -5,15 +5,7 @@ This is my repository of (mostly useless) code golfs. Each program is meant to b
 
 This code is not meant to be actually used. If you find yourself wanting to utilize any of these as a library, please consult a medical professional immediately.
 
-###### Currently a WIP
-
-# Structure
-
-Each folder contains a project with:
-
- * Program source code
- * README with a description and the usage
- * EXPLANATION with detailed/commented code
+### Currently a WIP
 
 # Why
 
