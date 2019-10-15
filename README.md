@@ -5,8 +5,6 @@ This is my repository of (mostly useless) code golfs. Each program is meant to b
 
 This code is not meant to be actually used. If you find yourself wanting to utilize any of these as a library, please consult a medical professional immediately.
 
-### Currently a WIP
-
 # Why
 
 Uhh...
@@ -16,5 +14,7 @@ Uhh...
 | Program           | Description                   |
 | ----------------- | ----------------------------- |
 | [mini-huff]       | Huffman compression           |
+| [mini-rsa]        | RSA encryption [WIP]          |
 
 [mini-huff]: mini-huff/
+[mini-rsa]: mini-rsa/
