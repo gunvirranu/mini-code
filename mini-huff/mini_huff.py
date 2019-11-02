@@ -27,8 +27,7 @@ def decompress(compressed: bytes) -> bytearray:
     for i, byte in enumerate(compressed):
         for dig in range(7 if i + 1 != len(compressed) else last_bits, -1, -1):
             cur = (cur << 1) | ((byte >> dig) & 1)
-            tmp = codes.get(cur, None)
-            if tmp is not None: cur, _ = 1, text.append(tmp)
+            if cur in codes: cur, _ = 1, text.append(codes.get(cur))
     return text
 
 

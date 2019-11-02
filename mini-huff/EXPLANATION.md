@@ -212,10 +212,9 @@ for i, byte in enumerate(compressed):
         # Add bit to LSb of current code
         cur = (cur << 1) | ((byte >> dig) & 1)
         # Check if `cur` maps to a character
-        tmp = codes.get(cur, None)
-        if tmp is not None:
+        if cur in codes:
             # If `cur` is valid code, add character to output
-            text.append(tmp)
+            text.append(codes.get(cur))
             # Reset code to 1, because all codes start with MSb of 1
             cur = 1
 return text
