@@ -16,5 +16,7 @@ Uhh...
 | Program           | Description                   |
 | ----------------- | ----------------------------- |
 | [mini-huff]       | Huffman compression           |
+| [mini-rsa]        | RSA encryption [WIP]          |
 
 [mini-huff]: mini-huff/
+[mini-rsa]: mini-rsa/
