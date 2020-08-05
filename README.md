@@ -1,9 +1,7 @@
 
-# mini code
+# mini-code
 
-This is my repository of (mostly useless) code golfs. Each program is meant to be as small as possible while still having "acceptable" performance. Currenty, everything is written in Python 3.
-
-This code is not meant to be actually used. If you find yourself wanting to utilize any of these as a library, please consult a medical professional immediately.
+Mini prototype implementations of random stuff. It's not code golf, but more about distilling programs down to their bare bones. Currently, everything is written in Python 3.
 
 ### Currently a WIP
 

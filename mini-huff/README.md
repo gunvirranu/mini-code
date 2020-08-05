@@ -1,12 +1,9 @@
 
 # mini-huff
 
-`mini-huff` is a golf-scripted Huffman compression scheme implementation.
-It utilizes a basic form of Huffman coding and is meant to be pretty small
-(the code itself *and* the outputs it produces :P).
+`mini-huff` is a mini compression implementation. It utilizes a basic form of Huffman coding, and is meant to be pretty small (the code itself *and* and the output it produces :P ).
 
-I call this **"compressed compression"**, just a little play on words for ya
-there.
+I call this **"compressed compression"**, just a little play of words for ya there.
 
 # Usage
 
@@ -16,5 +13,4 @@ there.
 
 # Explanation
 
-Just read the code, it's "self-documenting". But if you want the easy way
-out, see `EXPLANATION.md`.
+Just read the code, it's "self-documenting". But if you want the easy way out, see `EXPLANATION.md`.
