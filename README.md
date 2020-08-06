@@ -3,13 +3,11 @@
 
 Mini prototype implementations of random stuff. It's not code golf, but more about distilling programs down to their bare bones. Currently, everything is written in Python 3.
 
-### Currently a WIP
-
-# Why
+## Why
 
 Uhh...
 
-# Programs
+## Programs
 
 | Program           | Description                   |
 | ----------------- | ----------------------------- |
