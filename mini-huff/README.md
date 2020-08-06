@@ -5,12 +5,12 @@
 
 I call this **"compressed compression"**, just a little play of words for ya there.
 
-# Usage
+## Usage
 
 ```
 ./mini_huff.py {compress|decompress} <infile> <outfile>
 ```
 
-# Explanation
+## Explanation
 
 Just read the code, it's "self-documenting". But if you want the easy way out, see [`EXPLAINED`](EXPLAINED.md).
