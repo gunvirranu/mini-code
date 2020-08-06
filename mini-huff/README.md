@@ -13,4 +13,4 @@ I call this **"compressed compression"**, just a little play of words for ya the
 
 # Explanation
 
-Just read the code, it's "self-documenting". But if you want the easy way out, see `EXPLANATION.md`.
+Just read the code, it's "self-documenting". But if you want the easy way out, see [`EXPLAINED`](EXPLAINED.md).
